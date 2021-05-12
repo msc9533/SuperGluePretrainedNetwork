@@ -7,6 +7,9 @@ RUN apt-get update \
     python-pip \
     zip \
     git \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
   && rm -rf /var/lib/apt/lists/*
 RUN python3 -m pip install --upgrade pip
 RUN pip install matplotlib \
